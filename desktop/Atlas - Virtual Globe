@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Link
+Name=KDE Marble
+Icon=marble
+URL=/usr/share/applications/org.kde.marble.desktop
+Name[en_US]=Atlas - Marble Virtual Globe
