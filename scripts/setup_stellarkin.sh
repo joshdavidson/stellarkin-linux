@@ -15,7 +15,9 @@ cp -R ../config/* ~/.config/
 # Rename host
 sudo hostnamectl set-hostname stellarkin
 
-# Clean up history
+# Clean up after setup
+sudo apt-get autoremove && sudo apt-get clean
+sudo rm -rf /var/cache/apt/archive/* 
 cat /dev/null > ~/.bash_history && history -c && exit
 
 # Reboot at completion
