@@ -15,6 +15,9 @@ cp -R ../config/* ~/.config/
 # Rename host
 sudo hostnamectl set-hostname stellarkin
 
+# Clean up history
+cat /dev/null > ~/.bash_history && history -c && exit
+
 # Reboot at completion
 read -p "Setup complete. The system needs to reboot now. Is this ok? [Y/n]" -n 1 -r
 echo    # (optional) move to a new line
