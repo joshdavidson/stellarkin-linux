@@ -13,9 +13,10 @@ cp -R ./desktop/* ~/Desktop
 
 # Rename host
 sudo hostnamectl set-hostname stellarkin
+sed -i 's/raspberrypi/stellarkin/g' /etc/hosts
 
 # Clean up after setup
-sudo apt-get autoremove && sudo apt-get clean
+sudo apt-get autoremove -y && sudo apt-get clean
 sudo rm -rf /var/cache/apt/archive/* 
 cat /dev/null > ~/.bash_history && history -c && exit
 
