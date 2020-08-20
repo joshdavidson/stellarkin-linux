@@ -1,7 +1,7 @@
-#!/bin/bash
+#/bin/bash
 
 # Install pre-requisite packages
-sudo apt-get update && sudo apt-get upgrade -y
+sudo apt-get update
 sudo apt-get install -y raincat gamine pysycache childsplay gcompris tictactoe-ng klettres ktuberling khangman kanagram tanglet marble kgeography mah-jong lagan freecell-solver-bin gnome-mastermind kigo gnome-chess aisleriot tali mypaint* tuxpaint kstars kwordquiz scratch tuxmath kdeedu animals atomix basic256 gamine granule pysiogame tuxtype xball stellarium gnome-dictionary gnome-breakout
 
 # Move over the custom splash image
@@ -18,7 +18,7 @@ sed -i 's/raspberrypi/stellarkin/g' /etc/hosts
 # Clean up after setup
 sudo apt-get autoremove -y && sudo apt-get clean
 sudo rm -rf /var/cache/apt/archive/* 
-cat /dev/null > ~/.bash_history && history -c && exit
+cat /dev/null > ~/.bash_history && history -c
 
 # Reboot at completion
 read -p "Setup complete. The system needs to reboot now. Is this ok? [Y/n]" -n 1 -r
