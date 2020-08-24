@@ -11,3 +11,10 @@ $ git clone https://github.com/joshdavidson/stellarkin-linux.git
 $ cd stellarkin-linux
 $ ./stellarkin_setup.sh
 ```
+## Screenshots
+### Desktop
+![Stellarkin Desktop](https://github.com/joshdavidson/stellarkin-linux/blob/master/screenshots/screenshot-desktop.png)
+### Educational Apps
+![Educational Apps](https://github.com/joshdavidson/stellarkin-linux/blob/master/screenshots/screenshot-educational.png)
+### Games
+![Games](https://github.com/joshdavidson/stellarkin-linux/blob/master/screenshots/screenshot-games.png)
