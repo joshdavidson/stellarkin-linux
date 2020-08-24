@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=run_once.desktop
+Comment="Script that performs post installation setup of stellarium and tuxpaint"
+Exec=lxterminal -e /home/pi/.config/stellarkin/post_install.sh
+Terminal=true
